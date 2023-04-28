@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color:#053a5f;
+    text-align: center;
+    position: relative;
+    margin: 10 auto;
+    background: rgb(255,235,205);
+    background: radial-gradient(circle, rgba(255,235,205,1) 0%, rgba(132,180,182,1) 100%);
+}
+
+.difficulty-container {
+    color: #053a5f;
+    font-size:large;
+    position: relative;
+}
+
+label {
+    font-size: large;
+    color: #053a5f;
+    display: block;
+    padding-bottom: 20px;
+}
+
+span {
+    position:absolute;
+    background-color: blanchedalmond;
+    border: 1px solid #053a5f;
+    width: 30px;
+    border-radius: 25%;
+    text-align: center;
+    top: 24px;
+    left: -8px;
+}
+
+#difficulty {
+    display:block;
+    width: 100%;
+}
+
+#settings {
+    background-color: #84B4B6;
+    border: 2px solid #053a5f;
+    border-radius: 5px;
+    padding: 3em;
+    width: 50vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#startbutton {
+    width: 50%;
+    height: 40px;
+    background-color: #467C86;
+    color: blanchedalmond;
+    border-radius: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3em;
+    font-size: large;
+}
+
+#container {
+    position: relative;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #053a5f;
+    height: 0.5rem;
+    border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: #053a5f;
+    height: 0.5rem;
+    border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -12px;
+    background-color: blanchedalmond;
+    height: 2rem;
+    width: 10px;
+    border: 1px solid #053a5f;
+    border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: 1px solid #053a5f;
+    border-radius: 3px; 
+    background-color: blanchedalmond;
+    height: 2rem;
+    width: 1rem;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid #053a5f;
+    border-radius: 5%;
+    background-image:url(background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+img {
+    background:no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    visibility: hidden;
+}
+
+#playAgain {
+    background-color: #84B4B6;
+    font-size: large;
+    padding: 20px;
+    border: 2px solid #053a5f;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#053a5f;
+    visibility: hidden;
+
+}
+
+#yesButton {
+    background-color: #467C86;
+    color:blanchedalmond;
+    position: relative;
+    border-radius: 3px;
+    width: 37%;
+    height: 40px;
+    margin-left: 12%;
+
+}
+
+#noButton {
+    background-color: #467C86;
+    color: blanchedalmond;
+    position: relative;
+    border-radius: 3px;
+    width: 37%;
+    height: 40px;
+    margin-right: 12%;
+
+}
+
+@media (min-width: 1200px) {
+    img {
+        height: 300px;
+        width: 200px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    img {
+        height: 225px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:767px) {
+    img { 
+        height: 75px;
+        width: 50px;
+    }
+}
+
+/*#467C86
+
+background-color: #DC6E3B;

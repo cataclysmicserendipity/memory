@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory</title>
+  </head>
+  <body>
+    <div id="settings">
+      <h1>Memory</h1>
+      <div class="difficulty-container">
+        <label for="difficulty">Number of Cards</label>
+        <span id="difficulty-value">10</span>
+        <input
+          type="range"
+          id="difficulty"
+          name="difficulty"
+          min="5"
+          max="30"
+          value="5"
+          step="5"
+        />
+      </div>
+
+      <button id="startbutton">Start Game</button>
+    </div>
+    <div id="container"></div>
+    <div id="playAgain">
+      <h2>Do you want to play again?</h2>
+      <button id="yesButton">Yes please!</button>
+      <button id="noButton">No, thank you</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--a href="https://www.123rf.com/profile_virtosmedia">virtosmedia</a>,
+<a href="https://www.123rf.com/free-images/">123RF Free Images</a-->
